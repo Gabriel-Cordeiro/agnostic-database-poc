@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-namespace Infrastructure.Context
+namespace Infrastructure.Context.MySQL
 {
     public class MySqlContextContextFactory : IDesignTimeDbContextFactory<MySqlContext>
     {

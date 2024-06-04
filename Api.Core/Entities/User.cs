@@ -16,6 +16,8 @@
 
         public string Email { get; set; }
 
+        public string Test {get; set;}   
+
         public virtual ICollection<Address> Addresses { get; set; }
     }
 }

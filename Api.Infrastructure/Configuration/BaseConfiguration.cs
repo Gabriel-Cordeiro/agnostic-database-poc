@@ -10,7 +10,7 @@ namespace Infrastructure.Configuration
         public virtual void Configure(EntityTypeBuilder<TEntity> builder)
         {
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
-            builder.Property(x => x.CreatedAt).HasDefaultValue(DateTime.Now);
+            builder.Property(x => x.CreatedAt).HasDefaultValue(DateTime.UtcNow);
             builder.Property(x => x.UpdatedAt);
         }
     }

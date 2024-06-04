@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 
-namespace Infrastructure.Context
+namespace Infrastructure.Context.SqlServer
 {
     public class SqlServerContextContextFactory : IDesignTimeDbContextFactory<SqlServerContext>
     {

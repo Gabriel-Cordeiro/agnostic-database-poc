@@ -29,6 +29,9 @@ namespace Api.Extensions
                         break;
                     case DatabaseProvider.Hana:
                         throw new NotImplementedException();
+                    case DatabaseProvider.Postgres:
+                        options.UseNpgsql(connectionString);
+                        break;
                     default:
                         throw new Exception("Invalid database provider");
                 }

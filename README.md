@@ -7,8 +7,10 @@ The main idea is creating a library to use in many other API in a multitenant pr
 - For SqlServer migrations run: 
     dotnet ef migrations add InitialCreate --context SqlServerContext --output-dir Migrations/SqlServer
     dotnet ef database update --context SqlServerContext --connection "YourConnectionString"
-- For MySQl migrations run: dotnet ef migrations add InitialCreate --context MySqlContext --output-dir Migrations/MySql
+- For MySQl migrations run:
     dotnet ef migrations add InitialCreate --context MySqlContext --output-dir Migrations/MySql
     dotnet ef database update --context MySqlContext --connection "YourConnectionString"
 - For Postgres
+    dotnet ef migrations add InitialCreate --context PostgresContext --output-dir Migrations/Postgres
+    dotnet ef database update --context PostgresContext --connection "YourConnectionString"
 - For Hana

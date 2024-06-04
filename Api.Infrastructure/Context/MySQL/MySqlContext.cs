@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Infrastructure.Context
+namespace Infrastructure.Context.MySQL
 {
     public class MySqlContext : ApiDbContext
     {
@@ -9,10 +9,10 @@ namespace Infrastructure.Context
         }
 
         //If necessary we can override the model creating method and do manually the best mapping for mysql
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)    g
-        //{
+        // protected override void OnModelCreating(ModelBuilder modelBuilder)
+        // {
         //    modelBuilder.Entity<Address>().Property(wf => wf.Street).HasColumnType("varchar(512)");
-        //}
+        // }
 
     }
 }

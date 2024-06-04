@@ -1,4 +1,5 @@
 **MultiTenantHelper:**
+
 This is a helper class with an extensible method, AddMultiTenantDbContext(). This method will check the database provider and the connection string, then register an instance of ApiDbContext for MySQL, SQL Server, Postgres, or Hana. The main idea is to use two keys in the JWT token:
 
 {
